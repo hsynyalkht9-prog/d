@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تكرار الكروت</title>
+    <style>
+        body {
+            background: linear-gradient(140deg, #13102e, #16153a);
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .mnmnmn {
+            background: #0000009a;
+            border-radius: 8px;
+            box-shadow: 1px 3px 4px #151516;
+            text-align: center;
+            color: honeydew;
+            padding: 12px;
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* حاوية الكروت المتوافقة مع التمرير السلس */
+        .cards-container {
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            -webkit-overflow-scrolling: touch;
+            /* تمرير ناعم على الآيفون */
+            scrollbar-width: none;
+            /* إخفاء شريط التمرير لمتصفح فايرفوكس */
+        }
+
+        /* إخفاء شريط التمرير لمتصفحات كروم وسفاري لمظهر يشبه التطبيقات */
+        .cards-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* الكارت المرن المتوافق مع كافة الهواتف */
+        .jd {
+            background: #ffffffd0;
+            border-radius: 10px;
+            width: 85vw;
+            /* يأخذ 85% من عرض أي شاشة موبايل تلقائياً */
+            max-width: 320px;
+            /* يمنع الكارت من التمدد الزائد على الشاشات الكبيرة */
+            flex-shrink: 0;
+            /* يمنع انكماش الكارت */
+            height: auto;
+            font-weight: bold;
+            padding: 15px;
+            box-shadow: 1px 4px 10px #dbdbdb;
+            box-sizing: border-box;
+        }
+
+        .uerue {
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: #16153a;
+        }
+
+        .dhs {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .qwwq {
+            background: #ff932f;
+            border-radius: 8px;
+            width: 40px;
+            text-align: center;
+            margin: 10px auto;
+            padding: 2px 0;
+            color: #fff;
+        }
+
+        .hdjd {
+            background: #63636380;
+            border-radius: 10px;
+            box-shadow: 1px 2px 3px #513dff;
+            width: 100%;
+            height: 16px;
+            /* تحديد ارتفاع ثابت للشريط الفارغ */
+            overflow: hidden;
+        }
+
+        /* الحركات ونسب التقدم بدون نصوص داخلية */
+        .erer-q {
+            background: linear-gradient(135deg, #7a1f1f, #ce2828);
+            width: 0%;
+            height: 100%;
+            border-radius: 10px;
+            animation: df1 2s forwards;
+        }
+
+        .erer-w {
+            background: linear-gradient(135deg, #7a1f1f, #ce2828);
+            width: 0%;
+            height: 100%;
+            border-radius: 10px;
+            animation: df2 2s forwards;
+        }
+
+        .erer-e {
+            background: linear-gradient(135deg, #7a1f1f, #ce2828);
+            width: 0%;
+            height: 100%;
+            border-radius: 10px;
+            animation: df3 2s forwards;
+        }
+
+        .erer-r {
+            background: linear-gradient(135deg, #7a1f1f, #ce2828);
+            width: 0%;
+            height: 100%;
+            border-radius: 10px;
+            animation: df4 2s forwards;
+        }
+
+        @keyframes df1 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 10%;
+            }
+        }
+
+        @keyframes df2 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 5%;
+            }
+        }
+
+        @keyframes df3 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 7%;
+            }
+        }
+
+        @keyframes df4 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="mnmnmn">مراحل اكتمال واجهة دراسة الفصل الأول للخامس علمي</h2>
+
+    <div class="cards-container">
+
+        <!-- الكارت الأول -->
+        <div class="jd">
+            <h2 class="uerue">مرحلة الواجهة</h2>
+            <p class="dhs">اكتمال مرحلة الواجهة الدراسية بانتظار</p>
+            <div class="qwwq">10</div>
+            <div class="hdjd">
+                <div class="erer-q"></div>
+            </div>
+        </div>
+
+        <!-- الكارت الثاني -->
+        <div class="jd">
+            <h2 class="uerue">مرحلة التعاريف</h2>
+            <p class="dhs">اكتمال مرحلة الواجهة الدراسية بانتظار</p>
+            <div class="qwwq">5</div>
+            <div class="hdjd">
+                <div class="erer-w"></div>
+            </div>
+        </div>
+
+        <!-- الكارت الثالث -->
+        <div class="jd">
+            <h2 class="uerue">مرحلة الأسئلة</h2>
+            <p class="dhs">اكتمال مرحلة الواجهة الدراسية بانتظار</p>
+            <div class="qwwq">7</div>
+            <div class="hdjd">
+                <div class="erer-e"></div>
+            </div>
+        </div>
+
+        <!-- الكارت الرابع -->
+        <div class="jd">
+            <h2 class="uerue">مرحلة التعاليل</h2>
+            <p class="dhs">اكتمال مرحلة الواجهة الدراسية بانتظار</p>
+            <div class="qwwq">3</div>
+            <div class="hdjd">
+                <div class="erer-r"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
