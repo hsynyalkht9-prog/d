@@ -154,7 +154,7 @@
             }
 
             100% {
-                width: 80%;
+                width: 70%;
             }
         }
 
@@ -164,7 +164,7 @@
             }
 
             100% {
-                width: 80%;
+                width: 75%;
             }
         }
 
@@ -174,7 +174,7 @@
             }
 
             100% {
-                width: 80%;
+                width: 66%;
             }
         }
 
@@ -184,7 +184,7 @@
             }
 
             100% {
-                width: 80%;
+                width: 65%;
             }
         }
     </style>
@@ -240,3 +240,390 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="qw">
+        <h2 class="wq">الفصل الاول/التغذيه والهضم</h2>
+    </div>
+    <style>
+        /* تصفير المسافات الافتراضية لمنع ظهور شريط التمرير الجانبي */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wq {
+            background: #1a28a1;
+            border-radius: 10px;
+            border-right: 8px #fff897;
+            padding: 10px;
+            text-align: center;
+            width: 99%;
+            color: #f08b39;
+            border: 2px solid #ec5aff;
+
+        }
+
+        .qw {
+            background: #396d97;
+            border-radius: 10px;
+            border-right: 6px #fff897;
+            padding: 10px;
+            text-align: center;
+            width: 99%;
+            color: #8b0606;
+            border: 2px solid #0cc6ff;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 4vw;
+            /* مسافة أمان ديناميكية تتغير حسب حجم الموبايل */
+            background: #153968;
+            border-radius: 90px;
+        }
+
+        .qyyqyy {
+            color: #d3933f;
+        }
+
+        .oioi {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            background: #d80606;
+            color: #ff1346;
+            text-align: center;
+
+        }
+
+        /* الحاوية الرئيسية مرنة تتكيف تلقائياً كأعمدة أو صفوف حسب عرض شاشة الموبايل */
+        .qwwq {
+
+            width: 70%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: bold;
+            text-align: center;
+
+            background: #1f223b;
+            border-radius: 10px;
+
+            font-size: 15px;
+            color: #ffffff;
+            padding: 10px;
+            margin: 10px auto;
+            box-shadow: 1px 3px 10px #000000;
+            border: 1px solid #0cc6ff;
+        }
+
+
+        /* الكروت الزرقاء بأبعاد مرنة ومطاطية تماماً */
+        .weww {
+            box-shadow: 0 4px 12px rgb(18, 33, 102);
+            border-style: unset;
+            background: #1e1f22;
+            color: beige;
+            padding: 20px;
+            border-radius: 8px;
+            width: 70%;
+            height: auto;
+            border-right: 6px solid #b63030;
+            border-radius: 15px;
+            margin: 10px auto;
+            /* كلمة auto تقوم بتوسط الكارت تلقائياً من اليمين واليسار */
+
+
+        }
+
+        .weww h2 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+
+        .weww h3 {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            font-weight: normal;
+        }
+
+        hr {
+            background: #ffffff;
+            height: 2px;
+            border: none;
+            margin-bottom: 12px;
+        }
+
+        /* الكارت البرتقالي الأول بأبعاد مرنة متوافقة */
+        .nbnb {
+            background: rgb(16, 26, 59);
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 1px 3px 11px #000000;
+            border-style: groove;
+            width: 70%;
+            height: auto;
+            /* تحويل الارتفاع إلى تلقائي ليتناسب مع شاشات الموبايل الضيقة */
+            text-align: right;
+            padding: 20px;
+            margin: 10px auto;
+        }
+
+        /* الكارت البرتقالي الثاني بأبعاد مرنة متوافقة */
+        .nbnb1 {
+            background: rgb(16, 26, 59);
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 1px 3px 11px #000000;
+            border-style: groove;
+            width: 70%;
+            height: auto;
+            /* تحويل الارتفاع إلى تلقائي ليتناسب مع شاشات الموبايل الضيقة */
+            text-align: center;
+            padding: 20px;
+            margin: 10px auto;
+        }
+
+        /* العناوين الحمراء مرنة ولا تخرج عن حدود الكروت */
+        .nmnmn {
+            background: rgb(16, 26, 59);
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 1px 3px 10px #000000;
+            padding: 10px;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .bibib {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* ميديا كويري مخصصة لضبط حجم الخطوط بشكل مثالي جداً في الموبايلات الصغيرة جداً */
+        @media (max-width: 360px) {
+            .oioi {
+                font-size: 1.3rem;
+            }
+
+            .weww h2 {
+                font-size: 1.2rem;
+            }
+
+            .weww h3 {
+                font-size: 0.95rem;
+            }
+
+            .nmnmn {
+                font-size: 1.1rem;
+            }
+
+            .bibib {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+
+
+
+    <style>
+        .bhhh {
+            background: rgb(16, 26, 59);
+            border-radius: 10px;
+            box-shadow: 1px 3px 20px #000000;
+
+        }
+
+        .bgbg {
+            background: #ffffff;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 1px 3px 4px #4d4d4d;
+
+        }
+
+        .kjkj {
+            background: linear-gradient(135deg, #9c3838, #ee0404);
+
+            border-radius: 10px;
+            animation: bobo1 300s forwards;
+        }
+
+        @keyframes bobo1 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .wwww {
+            background: #1e293b;
+            border-radius: 14px;
+            width: 100%;
+            font-size: 15px;
+            color: #ffffff;
+            padding: 22px;
+
+
+            box-shadow: 1px 3px 10px #00000056;
+            border: 1px solid #131627;
+            margin: 10px auto;
+            font-size: 15px;
+            font-weight: bold;
+            border-right: 6px solid #06617c;
+            text-align: right;
+
+        }
+
+        .wwww h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #dd7411;
+            /* لون مميز وواضح للأسئلة */
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .wwww h3 {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #e2e8f0;
+            line-height: 1.8;
+            /* تباعد مريح للأسطر لمنع تداخل الشروحات */
+        }
+
+
+        .qweewe {
+            color: #ff8800;
+            font-weight: bold;
+
+
+        }
+    </style>
+    <br>
+
+
+    <style>
+        .pp {
+            border: 1px solid #239b6d;
+            width: 59%;
+            padding: 4px;
+        }
+
+        .pp1 {
+            border: 1px solid #239b6d;
+            width: 61%;
+            padding: 4px;
+        }
+
+        .pp2 {
+            border: 1px solid #239b6d;
+            width: 89%;
+            padding: 4px;
+        }
+    </style>
+    </div>
+
+
+
+
+
+    <style>
+        .q1 {
+            width: 100%;
+            display: flex;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .w1 {
+            background: #1f7994;
+            border-radius: 10px;
+            border-right: 6px solid #838383;
+        }
+
+        .weew1 {
+            background: #372e3f;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+    </div>
+
+
+
+
+
+
+    <style>
+        .oioi {
+            display: flex;
+            line-height: 1.5;
+            background: rgb(16, 26, 59);
+            border-radius: 10px;
+            width: 70%;
+            margin: 10px auto;
+            border: 1px solid #0cc6ff;
+            border-right: 6px solid #a73724;
+
+        }
+
+        table {
+
+            text-align: center;
+
+            border-radius: 8px;
+            box-shadow: 1px 3px 5px #080808;
+            border: 1px solid #0000006c;
+            margin: 20px;
+            padding: 8px;
+            background: rgb(16, 26, 59);
+            font-size: 15px;
+            width: 70%;
+            margin: 10px auto;
+            border: 1px solid #0cc6ff;
+            border-right: 6px solid #27a590;
+
+        }
+
+        th {
+
+
+            color: #ff5a44;
+
+        }
+
+        .i {
+            background: #d9d1ff;
+
+            border-radius: 8px;
+
+        }
+
+        td {
+
+            border-radius: 8px;
+            background: rgb(16, 26, 59);
+            color: #ffffff;
+            padding: 10px;
+            box-shadow: 1px 3px 5px #0cc6ff;
+
+        }
+    </style>
+    <br>
